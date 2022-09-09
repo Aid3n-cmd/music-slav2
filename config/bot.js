@@ -8,7 +8,7 @@ module.exports = {
     },
 
     discord: {
-        token: 'OTk5ODc0NDYwODM4NTI3MDM3.GOplwX.UXvQhnV-daJvxguLrhhZhgIwqgPJWhtrxa1NpI',
+        token: 'OTk5ODc0NDYwODM4NTI3MDM3.G5r_vU.eSpUPQm19MmkHZXzQYWfoy_cC6j-Fx_ipBfe_A',
         prefix: 'm!',
         activity: '(m!) make the voices stop',
     },
