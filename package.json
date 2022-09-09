@@ -14,4 +14,8 @@
     "discord.js": "^12.5.1",
     "ffmpeg-static": "^4.2.7"
   }
+   "engines" : { 
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
+  }
 }
