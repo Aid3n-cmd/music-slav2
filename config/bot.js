@@ -1,4 +1,4 @@
-const mySecret = process.env['TOKEN']
+const mySecret = secrets.TOKEN
 
 
 
