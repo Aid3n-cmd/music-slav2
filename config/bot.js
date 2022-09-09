@@ -1,3 +1,7 @@
+const mySecret = process.env['TOKEN']
+
+
+
 module.exports = {
     emojis: {
         off: ':x:',
@@ -8,7 +12,7 @@ module.exports = {
     },
 
     discord: {
-        token: 'OTk5ODc0NDYwODM4NTI3MDM3.G5r_vU.eSpUPQm19MmkHZXzQYWfoy_cC6j-Fx_ipBfe_A',
+        token: mySecret,
         prefix: 'm!',
         activity: '(m!) make the voices stop',
     },
