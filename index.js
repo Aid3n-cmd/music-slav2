@@ -1,3 +1,23 @@
+//some stuff for maybe keepalive?
+ const http = require('http');
+
+ const hostname = '0.0.0.0';
+ const port = 3000;
+
+ const server = http.createServer((req, res) => {
+   res.statusCode = 200;
+   res.setHeader('Content-Type', 'text/plain');
+   res.end('ok hoefully this will shart the bot when site is visisted?');
+ });
+
+ server.listen(port, hostname, () => {
+   console.log(`Server running at http:${hostname}:${port}/`);
+ });
+//also an error handler maybe
+process.on('uncaughtException', err => {
+  console.error('There was an uncaught error', err);
+});
+//end keepalive stuff
 const fs = require('fs');
 const discord = require('discord.js');
 

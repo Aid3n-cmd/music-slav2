@@ -1,8 +1,8 @@
 module.exports = {
     name: 'volume',
-    aliases: [],
+    aliases: ['v'],
     category: 'Music',
-    utilisation: '{prefix}volume [1-100]',
+    utilisation: '{prefix}volume [1-10000]',
 
     execute(client, message, args) {
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - You're not in a voice channel !`);
@@ -13,7 +13,7 @@ module.exports = {
 
         if (!args[0] || isNaN(args[0]) || args[0] === 'Infinity') return message.channel.send(`${client.emotes.error} - Please enter a valid number !`);
 
-        if (Math.round(parseInt(args[0])) < 1 || Math.round(parseInt(args[0])) > 100) return message.channel.send(`${client.emotes.error} - Please enter a valid number (between 1 and 100) !`);
+        if (Math.round(parseInt(args[0])) < 1 || Math.round(parseInt(args[0])) > 10000) return message.channel.send(`${client.emotes.error} - Please enter a valid number (between 1 and stop) !`);
 
         const success = client.player.setVolume(message, parseInt(args[0]));
 

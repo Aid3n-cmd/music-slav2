@@ -9,10 +9,10 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - You are not in the same voice channel !`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No music currently playing !`);
+        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - THERE ISN'T ANYTHING TO **FUCKING** SKIP!`);
 
         const success = client.player.skip(message);
 
-        if (success) message.channel.send(`${client.emotes.success} - The current music has just been **skipped** !`);
+        if (success) message.channel.send(`${client.emotes.success} - I **FUCKING** SKIPPED THE SONG!`);
     },
 };
