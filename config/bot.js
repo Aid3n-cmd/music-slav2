@@ -1,4 +1,4 @@
-const mySecret = secrets.TOKEN
+const mySecret = process.env.TOKEN
 
 
 
